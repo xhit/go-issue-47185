@@ -16,7 +16,7 @@ func main() {
 }
 
 func eD(c *longStruct1) {
-	p1.FillConn()
+	p1.Fp1()
 }
 
 // total variables here can cause the build error, so less variables of defined is fine

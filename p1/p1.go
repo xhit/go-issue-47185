@@ -8,12 +8,12 @@ type longStruct2 struct {
 	ba, bb, bc, bd, be, bf, bg, bh, bi, bj, bk, bl, bm, bn, bo                                             string
 }
 
-var ConnMutex = &sync.RWMutex{}
+var m = &sync.RWMutex{}
 
-var Connections map[string]longStruct2
+var v map[string]longStruct2
 
-func FillConn() {
-	ConnMutex.RLock()
-	_ = Connections[""]
-	ConnMutex.RUnlock()
+func Fp1() {
+	m.RLock()
+	_ = v[""]
+	m.RUnlock()
 }
